@@ -2,6 +2,14 @@
 
 # MonorepoBoilerplate
 
+## GCP Setup
+
+`gcloud auth login`
+`gcloud projects create choose-your-project-name --name="Happy project" --labels=type=happy`
+`gcloud config set project choose-your-project-name`
+`gcloud iam service-accounts list`
+find the Service Account email
+`gcloud iam service-accounts keys create key.json --iam-account=my-iam-account@my-project.iam.gserviceaccount.com`
 This project was generated using [Nx](https://nx.dev).
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
