@@ -1,11 +1,20 @@
-variable "project" { }
-
-variable "credentials_file" { }
-
-variable "region" {
-  default = "us-central1"
+variable "org_id" {
+  description = "The organization ID."
+  type        = string
 }
 
-variable "zone" {
-  default = "us-central1-c"
+variable "folder_id" {
+  description = "The ID of a folder to host this project."
+  type        = string
+  default     = ""
+}
+
+variable "billing_account" {
+  description = "The ID of the billing account to associate this project with"
+  type        = string
+}
+
+variable "location_id" {
+  description = "The location to serve the app from."
+  default     = "us-east4"
 }

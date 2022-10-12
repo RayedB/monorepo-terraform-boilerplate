@@ -1,2 +1,2 @@
-project                  = "<PROJECT_ID>"
-credentials_file         = "<FILE>"
+project          = "<PROJECT_ID>"
+credentials_file = "<FILE>"
